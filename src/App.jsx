@@ -27,8 +27,8 @@ function App() {
   return (
     <>
       <div className="banner-container">
-        <img src="./src/assets/images/leaves.jpg" className="top-image"></img>
-        <img src="./src/assets/images/off-road.png" className="jeep-image"></img>
+        <img src="src/assets/images/leaves.jpg" className="top-image"></img>
+        <img src="src/assets/images/off-road.png" className="jeep-image"></img>
       </div>
       <h1 className="app-title">PICK YOUR ADVENTURE!</h1>
       <p className="app-description">
