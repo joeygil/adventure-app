@@ -169,6 +169,15 @@
       "free": true,
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f0/Bamburgh_Castle_-_geograph.org.uk_-_2060766.jpg/1200px-Bamburgh_Castle_-_geograph.org.uk_-_2060766.jpg",
       "id": 17
+    },
+    {
+      "name": "The Zoo",
+      "location": "Chester",
+      "distance": "120",
+      "dogs": false,
+      "free": false,
+      "image": "",
+      "id": 18
     }
   ]
 }

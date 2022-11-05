@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../App.css";
 
 const Form = () => {
-  const url = "images/adventures.json";
+  const url = "http://localhost:3000/adventures";
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [distance, setDistance] = useState(0);
@@ -10,7 +10,7 @@ const Form = () => {
   const [free, setFree] = useState(false);
   const [image, setImage] = useState("");
 
-  const handleSubmit = (event) => {
+  const handleSubmit = () => {
     // event.preventDefault();
     const adventure = { name, location, distance, dogs, free, image };
 
@@ -18,14 +18,7 @@ const Form = () => {
       method: "POST",
       mode: "cors",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: name,
-        location: location,
-        distance: distance,
-        dogs: dogs,
-        free: free,
-        image: image,
-      }),
+      body: JSON.stringify(adventure),
     }).then(() => {
       alert("Your submission has been added!");
     });
