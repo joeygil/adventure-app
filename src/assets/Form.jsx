@@ -2,7 +2,8 @@ import { useState } from "react";
 import "../App.css";
 
 const Form = () => {
-  const url = "images/adventures.json";
+  const url =
+    "https://melodious-swan-4d5730.netlify.app/images/adventures.json";
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [distance, setDistance] = useState(0);
