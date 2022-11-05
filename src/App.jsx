@@ -24,6 +24,8 @@ function App() {
   const dogsAllowed = document.querySelector(".dogs-box");
   const isItFree = document.querySelector(".free-box");
 
+  // console.log(typeof parseInt(distance.value));
+
   return (
     <>
       <div className="banner-container">
@@ -68,7 +70,7 @@ function App() {
           {adventure.adventures
             .filter(
               (adv) =>
-                adv.distance <= distance.value &&
+                adv.distance <= parseInt(distance.value) &&
                 adv.dogs === dogsAllowed.checked &&
                 adv.free === isItFree.checked
             )
