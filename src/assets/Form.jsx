@@ -2,7 +2,7 @@ import { useState } from "react";
 import "../App.css";
 
 const Form = () => {
-  const url = "http://localhost:8000/adventures";
+  const url = "adventures.json";
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [distance, setDistance] = useState(0);
