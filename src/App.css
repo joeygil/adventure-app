@@ -4,7 +4,7 @@
   padding: 2rem;
   text-align: center;
   font-family: "Varela Round", sans-serif;
-  color: #dcdcdc;
+  color: white;
 }
 
 body {
@@ -41,6 +41,12 @@ h1 {
   margin-top: 50%;
   font-size: 1.5rem;
   text-shadow: 2px 2px 4px #000000;
+}
+
+@media only screen and (min-width: 800px) {
+  .app-title {
+    font-size: 3rem;
+  }
 }
 
 .jeep-image {
