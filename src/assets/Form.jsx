@@ -17,13 +17,19 @@ const Form = () => {
     fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(adventure),
+      body: JSON.stringify({
+        name: name,
+        location: location,
+        distance: distance,
+        dogs: dogs,
+        free: free,
+        image: image,
+      }),
     }).then(() => {
       alert("Your submission has been added!");
     });
 
     console.log(adventure);
-
   };
 
   return (
