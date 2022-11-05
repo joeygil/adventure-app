@@ -9,7 +9,7 @@ function App() {
 
   const handleClick = async () => {
     setIsLoading(true);
-    const response = await fetch("assets/adventures.json");
+    const response = await fetch("images/adventures.json");
     if (!response.ok) {
       throw new Error(`Error! Status ${response.status}`);
     }
