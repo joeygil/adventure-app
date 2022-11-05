@@ -2,8 +2,7 @@ import { useState } from "react";
 import "../App.css";
 
 const Form = () => {
-  const url =
-    "https://melodious-swan-4d5730.netlify.app/images/adventures.json";
+  const url = "images/adventures.json";
   const [name, setName] = useState("");
   const [location, setLocation] = useState("");
   const [distance, setDistance] = useState(0);
@@ -15,8 +14,6 @@ const Form = () => {
     // event.preventDefault();
     const adventure = { name, location, distance, dogs, free, image };
 
-    console.log(adventure);
-
     fetch(url, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -25,7 +22,8 @@ const Form = () => {
       alert("Your submission has been added!");
     });
 
-    const btn = document.getElementById("btn-submit-new");
+    console.log(adventure);
+
   };
 
   return (
